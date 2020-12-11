@@ -2,7 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/liked">Liked</router-link> |
+      <router-link to="/disliked">Disliked</router-link>
+
     </div>
     <router-view />
   </div>
@@ -19,14 +21,16 @@
 
 #nav {
   padding: 30px;
+  color: #eeeeee;
+
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #eeeeee;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #00adb5;
 }
 </style>

@@ -4,7 +4,18 @@ import router from "./router";
 
 Vue.config.productionTip = false;
 
+
+import mock from './mock-data.js';
+
+let data = {
+  articles: mock,
+  liked: [],
+  disliked: []
+}
+
+
 new Vue({
   router,
+  data,
   render: h => h(App)
 }).$mount("#app");
